@@ -13,13 +13,10 @@ repositories {
 }
 
 dependencies {
-//	implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.6.1'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-//	implementation group: 'com.heroku', name: 'webapp-runner', version: '9.0.52.0'
 
 }
 
