@@ -9,7 +9,15 @@ import org.springframework.web.bind.annotation.RestController
 class DemoApi {
 
     @GetMapping(
-        value = ["/", "/welcome"],
+        value = ["/"],
+        produces = [MediaType.TEXT_PLAIN_VALUE]
+    )
+    fun startPage(): String {
+        return "Warsztaty w I Liceum Ogólnokształcącym"
+    }
+
+    @GetMapping(
+        value = ["/welcome"],
         produces = [MediaType.TEXT_PLAIN_VALUE]
     )
     fun welcomeAll(): String {
