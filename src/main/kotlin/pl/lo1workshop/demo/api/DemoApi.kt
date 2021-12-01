@@ -31,5 +31,4 @@ class DemoApi {
     fun welcomeOne(@PathVariable("name") name: String): String {
         return "Witaj ${name.replaceFirstChar{ it.uppercase()}} !!"
     }
-
 }
