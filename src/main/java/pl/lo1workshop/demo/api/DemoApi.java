@@ -8,6 +8,6 @@ public class DemoApi {
 
     @GetMapping
     String welcomeAll() {
-        return "Witajcie wszyscy na spotkaniu";
+        return "Witajcie w LO";
     }
 }
