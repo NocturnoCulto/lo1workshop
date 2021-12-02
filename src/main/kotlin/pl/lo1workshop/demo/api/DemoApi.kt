@@ -15,15 +15,15 @@ class DemoApi {
     fun startPage(): String {
         return "Warsztaty w I Liceum Ogólnokształcącym"
     }
-//
-//    @GetMapping(
-//        value = ["/welcome"],
-//        produces = [MediaType.TEXT_PLAIN_VALUE]
-//    )
-//    fun welcomeAll(): String {
-//        return "Witajcie wszyscy na spotkaniu !"
-//    }
-//
+
+    @GetMapping(
+        value = ["/welcome"],
+        produces = [MediaType.TEXT_PLAIN_VALUE]
+    )
+    fun welcomeAll(): String {
+        return "Witajcie wszyscy na spotkaniu !"
+    }
+
 //    @GetMapping(
 //        value = ["/welcome/{name}"],
 //        produces = [MediaType.TEXT_PLAIN_VALUE]
