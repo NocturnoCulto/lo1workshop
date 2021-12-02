@@ -24,12 +24,11 @@ class DemoApi {
         return "Witajcie wszyscy na spotkaniu !"
     }
 
-//    @GetMapping(
-//        value = ["/welcome/{name}"],
-//        produces = [MediaType.TEXT_PLAIN_VALUE]
-//    )
-//    fun welcomeOne(@PathVariable("name") name: String): String {
-//        return "Witaj ${name.replaceFirstChar{ it.uppercase()}} !!"
-//    }
-
+    @GetMapping(
+        value = ["/welcome/{name}"],
+        produces = [MediaType.TEXT_PLAIN_VALUE]
+    )
+    fun welcomeOne(@PathVariable("name") name: String): String {
+        return "Witaj ${name.replaceFirstChar{ it.uppercase()}} !!"
+    }
 }
